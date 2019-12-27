@@ -64,12 +64,12 @@
 		3408CE0023B5E7BE00846021 /* NewsToday */ = {
 			isa = PBXGroup;
 			children = (
+				3416F86823B5FF7B00845B6C /* WebService */,
+				3416F86723B5FF5F00845B6C /* Views */,
 				3408CE1C23B5ECFC00846021 /* ViewModels */,
 				3408CE1723B5EA3900846021 /* Models */,
 				3408CE0123B5E7BE00846021 /* AppDelegate.swift */,
 				3408CE0323B5E7BE00846021 /* SceneDelegate.swift */,
-				3408CE0523B5E7BE00846021 /* ContentView.swift */,
-				3408CE1A23B5EA8900846021 /* WebService.swift */,
 				3408CE0723B5E7BE00846021 /* Assets.xcassets */,
 				3408CE0C23B5E7BE00846021 /* LaunchScreen.storyboard */,
 				3408CE0F23B5E7BE00846021 /* Info.plist */,
@@ -101,6 +101,22 @@
 				3408CE2323B5F1CE00846021 /* ArticleListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3416F86723B5FF5F00845B6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3408CE0523B5E7BE00846021 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3416F86823B5FF7B00845B6C /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				3408CE1A23B5EA8900846021 /* WebService.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -13,6 +13,7 @@
 		3408CE0823B5E7BE00846021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3408CE0723B5E7BE00846021 /* Assets.xcassets */; };
 		3408CE0B23B5E7BE00846021 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3408CE0A23B5E7BE00846021 /* Preview Assets.xcassets */; };
 		3408CE0E23B5E7BE00846021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3408CE0C23B5E7BE00846021 /* LaunchScreen.storyboard */; };
+		3408CE1923B5EA4C00846021 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3408CE1823B5EA4C00846021 /* NewsAPIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3408CE0A23B5E7BE00846021 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3408CE0D23B5E7BE00846021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3408CE0F23B5E7BE00846021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3408CE1823B5EA4C00846021 /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3408CE0023B5E7BE00846021 /* NewsToday */ = {
 			isa = PBXGroup;
 			children = (
+				3408CE1723B5EA3900846021 /* Models */,
 				3408CE0123B5E7BE00846021 /* AppDelegate.swift */,
 				3408CE0323B5E7BE00846021 /* SceneDelegate.swift */,
 				3408CE0523B5E7BE00846021 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				3408CE0A23B5E7BE00846021 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3408CE1723B5EA3900846021 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3408CE1823B5EA4C00846021 /* NewsAPIResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			files = (
 				3408CE0223B5E7BE00846021 /* AppDelegate.swift in Sources */,
 				3408CE0423B5E7BE00846021 /* SceneDelegate.swift in Sources */,
+				3408CE1923B5EA4C00846021 /* NewsAPIResponse.swift in Sources */,
 				3408CE0623B5E7BE00846021 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

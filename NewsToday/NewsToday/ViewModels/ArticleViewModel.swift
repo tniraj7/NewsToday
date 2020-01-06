@@ -1,10 +1,11 @@
 import Foundation
+import Combine
 
 class ArticleViewModel: Identifiable {
     
     let id = UUID()
     
-    let article: Article
+    @Published var article: Article
     
     init(article: Article) {
         self.article = article

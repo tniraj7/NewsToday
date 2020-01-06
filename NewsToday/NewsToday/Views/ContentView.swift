@@ -3,11 +3,11 @@ import SwiftUI
 
 struct ContentView : View {
     
-    @ObservedObject var model = ArticleListViewModel()
+    @ObservedObject var model: ArticleListViewModel = ArticleListViewModel()
     
     var body: some View {
         NavigationView {
-            List(model.articles) { article in
+            List(self.model.articleListViewModel) { article in
                 VStack(alignment: .leading) {
                     
                     Text(article.title)
@@ -17,8 +17,10 @@ struct ContentView : View {
                         .foregroundColor(.secondary)
                         .lineLimit(nil)
                 }
-            }
+                }
             .navigationBarTitle(Text("Top Headlines"))
+        }.onAppear() {
+            self.model.fetchNews()
         }
     }
 }

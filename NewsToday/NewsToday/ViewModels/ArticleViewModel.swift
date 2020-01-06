@@ -19,5 +19,11 @@ class ArticleViewModel: Identifiable {
         return self.article.description ?? ""
     }
     
+    var url: String {
+        return self.article.url
+    }
     
+    var urlToImage: String {
+        return self.article.urlToImage ?? ""
+    }
 }

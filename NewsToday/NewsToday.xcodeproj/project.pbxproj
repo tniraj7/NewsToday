@@ -20,6 +20,7 @@
 		340D3D9B23C2D9950081EEBC /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D3D9A23C2D9950081EEBC /* GlobalConstants.swift */; };
 		340D3D9D23C307C40081EEBC /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D3D9C23C307C40081EEBC /* ImageLoader.swift */; };
 		340D3D9F23C30B470081EEBC /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D3D9E23C30B470081EEBC /* ImageView.swift */; };
+		340D3DA123C316EB0081EEBC /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D3DA023C316EB0081EEBC /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		340D3D9A23C2D9950081EEBC /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		340D3D9C23C307C40081EEBC /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		340D3D9E23C30B470081EEBC /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		340D3DA023C316EB0081EEBC /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				3408CE0523B5E7BE00846021 /* ContentView.swift */,
 				340D3D9E23C30B470081EEBC /* ImageView.swift */,
+				340D3DA023C316EB0081EEBC /* SafariView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340D3D9F23C30B470081EEBC /* ImageView.swift in Sources */,
+				340D3DA123C316EB0081EEBC /* SafariView.swift in Sources */,
 				3408CE0223B5E7BE00846021 /* AppDelegate.swift in Sources */,
 				3408CE0423B5E7BE00846021 /* SceneDelegate.swift in Sources */,
 				3408CE1923B5EA4C00846021 /* NewsAPIResponse.swift in Sources */,

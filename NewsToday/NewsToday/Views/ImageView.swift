@@ -1,22 +1,49 @@
 import SwiftUI
+import KingfisherSwiftUI
 
 struct ImageView: View {
-    @ObservedObject var imageLoader:ImageLoader
+    var url: String
+    var text: String
+    var width: CGFloat
+    var height: CGFloat
     
-    init(withUrl url: String) {
-        imageLoader = ImageLoader(urlString: url)
+    init(url: String, text: String, width: CGFloat, height: CGFloat) {
+        self.url = url
+        self.text = text
+        self.width = width
+        self.height = height
     }
+
+    var rectangle: some View {
+        Rectangle()
+            .foregroundColor(Color.clear)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.clear, Color.black.opacity(0.8)]), startPoint: .top, endPoint: .bottom))
+            .cornerRadius(20)
+    }
+    
+    var title: some View {
+        Text(self.text)
+            .font(.footnote)
+            .padding([.leading, .trailing], 5.0)
+            .fixedSize(horizontal: false, vertical: false)
+            .foregroundColor(Color.white)
+            .lineLimit(5)
+            .offset(y: 75)
+    }
+
     var body: some View {
-        VStack {
-            Image(uiImage: (imageLoader.isImageValid ? UIImage(data: imageLoader.data!) : UIImage())!)
+            KFImage(URL(string: url), options: [.transition(.fade(1))])
+                .renderingMode(.original)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-        }
+                .frame(width: 300, height: 210)
+                .cornerRadius(20)
+                .overlay(self.rectangle)
+                .overlay(title)
     }
 }
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView(withUrl: "https://images.wsj.net/im-141518/social")
+        ImageView(url: sampleImageUrl,text: sampleText, width: 300, height: 230)
     }
 }

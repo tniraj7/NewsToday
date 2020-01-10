@@ -18,7 +18,6 @@
 		3408CE2023B5ED1900846021 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3408CE1F23B5ED1900846021 /* ArticleViewModel.swift */; };
 		3408CE2423B5F1CE00846021 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3408CE2323B5F1CE00846021 /* ArticleListViewModel.swift */; };
 		340D3D9B23C2D9950081EEBC /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D3D9A23C2D9950081EEBC /* GlobalConstants.swift */; };
-		340D3D9D23C307C40081EEBC /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D3D9C23C307C40081EEBC /* ImageLoader.swift */; };
 		340D3D9F23C30B470081EEBC /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D3D9E23C30B470081EEBC /* ImageView.swift */; };
 		340D3DA123C316EB0081EEBC /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D3DA023C316EB0081EEBC /* SafariView.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +36,6 @@
 		3408CE1F23B5ED1900846021 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		3408CE2323B5F1CE00846021 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		340D3D9A23C2D9950081EEBC /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
-		340D3D9C23C307C40081EEBC /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		340D3D9E23C30B470081EEBC /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		340D3DA023C316EB0081EEBC /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				3408CE1A23B5EA8900846021 /* WebService.swift */,
-				340D3D9C23C307C40081EEBC /* ImageLoader.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -217,7 +214,6 @@
 				3408CE1923B5EA4C00846021 /* NewsAPIResponse.swift in Sources */,
 				3408CE2023B5ED1900846021 /* ArticleViewModel.swift in Sources */,
 				3408CE1B23B5EA8900846021 /* WebService.swift in Sources */,
-				340D3D9D23C307C40081EEBC /* ImageLoader.swift in Sources */,
 				3408CE0623B5E7BE00846021 /* ContentView.swift in Sources */,
 				340D3D9B23C2D9950081EEBC /* GlobalConstants.swift in Sources */,
 				3408CE2423B5F1CE00846021 /* ArticleListViewModel.swift in Sources */,

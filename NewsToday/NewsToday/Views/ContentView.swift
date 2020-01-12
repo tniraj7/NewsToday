@@ -18,17 +18,7 @@ struct ContentView : View {
                 }
             }
             .navigationBarTitle(Text("News Plus"))
-            .navigationBarItems(
-                trailing:  Button(self.showList.toggle())
-                            .sheet(isPresented: $showList) {
-                                PickerView()
-                             }
-            )
         }
-    }
-    
-    var chooseCountry: some View {
-        PickerView()
     }
 }
 struct ContentView_Previews: PreviewProvider {

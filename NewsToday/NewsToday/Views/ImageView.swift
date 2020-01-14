@@ -35,7 +35,7 @@ struct ImageView: View {
             KFImage(URL(string: url), options: [.transition(.fade(1))])
                 .renderingMode(.original)
                 .resizable()
-                .frame(width: 300, height: 210)
+                .frame(width: 370, height: 210)
                 .cornerRadius(20)
                 .overlay(self.rectangle)
                 .overlay(title)

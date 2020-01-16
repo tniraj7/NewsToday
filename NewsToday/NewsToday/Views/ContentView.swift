@@ -32,13 +32,11 @@ struct ContentView : View {
                 self.model.fetchNews()
             }
             .navigationBarTitle(Text("News Plus"))
-//            .navigationBarItems(
-//                trailing: Button(action: self.model.fetchNews) {
-//                    Image(systemName: "arrow.clockwise.circle")
-//                    .resizable()
-//                    frame(width: 30, height: 30)
-//                }
-//            )
+            .navigationBarItems(trailing: Button(action: self.model.fetchNews) {
+                Image(systemName: "arrow.clockwise.circle")
+                .resizable()
+                .frame(width: 25, height: 25)
+            })
         }
     }
 }

@@ -24,6 +24,7 @@ struct ImageView: View {
     var title: some View {
         Text(self.text)
             .font(.footnote)
+            .fontWeight(.semibold)
             .padding([.leading, .trailing], 5.0)
             .fixedSize(horizontal: false, vertical: false)
             .foregroundColor(Color.white)

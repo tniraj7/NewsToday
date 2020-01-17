@@ -27,9 +27,7 @@ struct ContentView : View {
                 }
                 .listStyle(GroupedListStyle())
                 .onAppear() { self.model.fetchNews() }
-                .navigationBarTitle(
-                    Text("News Plus").foregroundColor(Color("tintColor"))
-                )
+                .navigationBarTitle(Text("News Plus"))
                 .navigationBarItems(trailing: Button(action: self.model.fetchNews) {
                     Image(systemName: "arrow.clockwise.circle")
                     .resizable()

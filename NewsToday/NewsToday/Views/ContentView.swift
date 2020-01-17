@@ -13,37 +13,40 @@ struct ContentView : View {
     }
     
     var body: some View {
-        NavigationView {
-            List(self.model.articleListViewModel) { article in
-                VStack(alignment: .leading) {
-                    Button(action: { self.showNews.toggle() }) {
-                        ImageView(url: article.urlToImage, text: article.title, width: 300, height: 230)
-                            .sheet(isPresented: self.$showNews) {
-                                SafariView(article.url)
+            NavigationView {
+                List(self.model.articleListViewModel) { article in
+                    VStack(alignment: .leading) {
+                        Button(action: { self.showNews.toggle() }) {
+                            ImageView(url: article.urlToImage, text: article.title, width: 300, height: 230)
+                                .sheet(isPresented: self.$showNews) { SafariView(article.url) }
                         }
+                        .cornerRadius(20)
+                        .shadow(color: Color("buttonShadow"), radius: 20, x: 0, y: 20)
                     }
-                    .cornerRadius(20)
-                    .shadow(color: Color("buttonShadow"), radius: 20, x: 0, y: 20)
+                    .padding(.vertical, 20.0)
                 }
-                .padding(.vertical, 20.0)
+                .listStyle(GroupedListStyle())
+                .onAppear() { self.model.fetchNews() }
+                .navigationBarTitle(
+                    Text("News Plus").foregroundColor(Color("tintColor"))
+                )
+                .navigationBarItems(trailing: Button(action: self.model.fetchNews) {
+                    Image(systemName: "arrow.clockwise.circle")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    
+                })
             }
-            .listStyle(GroupedListStyle())
-            .onAppear() {
-                self.model.fetchNews()
-            }
-            .navigationBarTitle(Text("News Plus"))
-            .navigationBarItems(trailing: Button(action: self.model.fetchNews) {
-                Image(systemName: "arrow.clockwise.circle")
-                .resizable()
-                .frame(width: 25, height: 25)
-            })
-        }
+            .accentColor(Color("tintColor"))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView().environment(\.colorScheme, .dark)
+            ContentView().environment(\.colorScheme, .light)
+        }
     }
 }
 

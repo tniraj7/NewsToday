@@ -45,6 +45,6 @@ struct ImageView: View {
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView(url: sampleImageUrl,text: sampleText, width: 300, height: 230)
+        ImageView(url: sampleImageUrl,text: sampleText, width: 300, height: 230).environment(\.colorScheme, .dark)
     }
 }

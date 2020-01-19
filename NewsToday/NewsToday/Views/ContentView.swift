@@ -17,7 +17,7 @@ struct ContentView : View {
                 List(self.model.articleListViewModel) { article in
                     VStack(alignment: .leading) {
                         Button(action: { self.showNews.toggle() }) {
-                            ImageView(url: article.urlToImage, text: article.title, width: 300, height: 230)
+                            ImageView(url: article.urlToImage, text: article.title)
                                 .sheet(isPresented: self.$showNews) { SafariView(article.url) }
                         }
                         .cornerRadius(20)

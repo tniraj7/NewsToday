@@ -4,14 +4,10 @@ import KingfisherSwiftUI
 struct ImageView: View {
     var url: String
     var text: String
-    var width: CGFloat
-    var height: CGFloat
     
-    init(url: String, text: String, width: CGFloat, height: CGFloat) {
+    init(url: String, text: String) {
         self.url = url
         self.text = text
-        self.width = width
-        self.height = height
     }
 
     var rectangle: some View {
@@ -45,6 +41,6 @@ struct ImageView: View {
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView(url: sampleImageUrl,text: sampleText, width: 300, height: 230).environment(\.colorScheme, .dark)
+        ImageView(url: sampleImageUrl,text: sampleText).environment(\.colorScheme, .dark)
     }
 }

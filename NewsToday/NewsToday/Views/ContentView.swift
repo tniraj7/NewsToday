@@ -4,7 +4,6 @@ import KingfisherSwiftUI
 struct ContentView : View {
     @State var show = false
     @State var showNews = false
-    @State var showSettings = false
     
     @ObservedObject var model: ArticleListViewModel = ArticleListViewModel()
     

@@ -12,7 +12,7 @@ class ArticleListViewModel: ObservableObject {
         
         Webservice().loadNews(url: url) { (newsArticles) in
             if let articles = newsArticles {
-                self.articleListViewModel = articles.map({ ArticleViewModel.init(article: $0)})
+                self.articleListViewModel = articles.map({ ArticleViewModel.init(article: $0) })
             }
         }
     }

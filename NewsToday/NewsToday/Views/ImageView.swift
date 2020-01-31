@@ -1,5 +1,5 @@
 import SwiftUI
-import KingfisherSwiftUI
+import SDWebImageSwiftUI
 
 struct ImageView: View {
     var url: String
@@ -29,13 +29,15 @@ struct ImageView: View {
     }
 
     var body: some View {
-            KFImage(URL(string: url), options: [.transition(.fade(1))])
+        WebImage(url: URL(string: url))
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 370, height: 210)
                 .cornerRadius(20)
                 .overlay(self.rectangle)
                 .overlay(title)
+                .animation(.easeInOut(duration: 0.5))
+            
     }
 }
 

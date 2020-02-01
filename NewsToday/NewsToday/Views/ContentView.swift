@@ -1,5 +1,4 @@
 import SwiftUI
-import KingfisherSwiftUI
 
 struct ContentView : View {
     @State var show = false
